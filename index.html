@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Online</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card {
+            max-width: 10rem; /* Make cards smaller */
+            margin: auto; /* Center align if needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Buku Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Buku
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="buku/novel/novel.html">Novel</a></li>
+                          <li><a class="dropdown-item" href="buku/Manga/Manga.html">Manga</a></li>
+                          <li><a class="dropdown-item" href="buku/Filsafat/Filsafat.html">Filsafat</a></li>
+                          <li><a class="dropdown-item" href="buku/Sejarah/sejarah.html">Sejarah</a></li>
+                        </ul>
+                      </div>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Page Slider -->
+    <div id="landingPageSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#landingPageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#landingPageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#landingPageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/landpage/slide1.png" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Selamat Datang di Buku Online</h5>
+                    <p>Temukan berbagai buku favorit Anda!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/landpage/slide2.png" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Koleksi Terlengkap</h5>
+                    <p>Kami menyediakan berbagai genre buku untuk Anda.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/landpage/slide3.png" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Akses Mudah</h5>
+                    <p>Baca kapan saja dan di mana saja.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#landingPageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#landingPageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Buku per Genre -->
+    <section id="books" class="">
+        <div class="container">
+            <h2 class="text-center mb-4 py-5">Koleksi Buku</h2>
+
+                 <!-- Filsafat -->
+                 <section id="books" class="">
+                    <div class="container">
+                        <h2 class="text-center mb-4"></h2>
+                <h3 class="mt-5 mb-3"><a href="buku/Filsafat/Filsafat.html" class="text-decoration-none text-dark">Lihat Koleksi Buku Filsafat Lainnya</a></h3>
+                <div class="row row-cols-6 g-7">
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Filsafat/Dunia Sophie/Dunia Sophie.html">
+                                <img src="buku/Filsafat/Dunia Sophie/Dunia Sophie.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Filsafat/Filosofi Teras/Filosofi Teras.html">
+                                <img src="buku/Filsafat/Filosofi Teras/Filosofi Teras.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Filsafat/Madilog/Madilog.html">
+                                <img src="buku/Filsafat/Madilog/Madilog.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Filsafat/Alam Pikiran Yunani/Alam Pikiran Yunani.html">
+                                <img src="buku/Filsafat/Alam Pikiran Yunani/Alam Pikiran Yunani.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Filsafat/Filsafat Untuk Pemalas/Filasafat untuk pemalas.html">
+                                <img src="buku/Filsafat/Filsafat Untuk Pemalas/Filsafat untuk pemalas.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Filsafat/Filsafat periode socrates/filsafat periode socrates.html">
+                                <img src="buku/Filsafat//Filsafat periode socrates/filsafat periode socrates.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- sejarah -->
+                <section id="books" class="">
+                    <div class="container">
+                        <h2 class="text-center mb-4"></h2>
+                <h3 class="mt-5 mb-3"><a href="buku/Sejarah/sejarah.html" class="text-decoration-none text-dark">Lihat Koleksi Buku Sejarah Lainnya</a></h3>
+                <div class="row row-cols-6 g-7">
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Sejarah/Sejarah Dunia yang Disembunyikan/Sejarah Dunia yang Disembunyikan.html">
+                                <img src="buku/Sejarah/Sejarah Dunia yang Disembunyikan/Sejarah Dunia yang Disembunyikan.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Sejarah/negara dan kekaisaran kuno/negara dan kekaisaran.html">
+                                <img src="buku/Sejarah/negara dan kekaisaran kuno/buku-sejarah-negara-dan-kekaisaran-kuno-indoliterasi.jpg.webp" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Sejarah/sejarah peradaban islam/sejarah peradaban islam.html">
+                                <img src="buku/Sejarah/sejarah peradaban islam/sejarah peradaban islam.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Sejarah/ww2/ww2.html">
+                                <img src="buku/Sejarah/ww2/ww2.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Sejarah/Renaisans/Renaisans.html">
+                                <img src="buku/Sejarah/Renaisans/Renaisans.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 540px;">
+                            <a href="buku/Sejarah/gajah mada/gajah mada.html">
+                                <img src="buku/Sejarah/gajah mada/gajah mada.jpg" class="card-img-top" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+
+            <!-- NOVEL -->
+            <h3 class="mt-5 mb-3"><a href="buku/novel/Novel.html" class="text-decoration-none text-dark">Lihat Koleksi Novel Lainnya</a></h3>
+            <div class="row row-cols-6 g-7">
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/novel/Harry Potter and the Sorcerer’s Stone/Harry-Potter-and-the-Sorcerer’s-Stone.html">
+                            <img src="buku/novel/Harry Potter and the Sorcerer’s Stone/Harry-Potter-and-the-Sorcerer’s-Stone.jpeg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/novel/Lord Of The Ring/Lord Of The Ring.html">
+                            <img src="buku/novel/Lord Of The Ring/lord of the ring_.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/novel/The Witcher/The Witcher.html">
+                            <img src="buku/novel/The Witcher/The Witcher.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/novel/A Song Of Ice And Fire/A Song Of Ice And Fire.html">
+                            <img src="buku/novel/A Song Of Ice And Fire/A Song Of Ice And Fire.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/novel/lupin/lupin.html">
+                            <img src="buku/novel/lupin/sherlock-lupin-dan-aku-1-cover-baru-kawanan-si-nyonya-hitam.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/novel/Bumi/Bumi.html">
+                            <img src="buku/novel/Bumi/Bumi.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+
+            <!-- Manga -->
+            <section id="books" class="">
+                <div class="container">
+                    <h2 class="text-center mb-4"></h2>
+            <h3 class="mt-5 mb-3"><a href="buku/Manga/Manga.html" class="text-decoration-none text-dark">Lihat Koleksi Manga Lainnya</a></h3>
+            <div class="row row-cols-6 g-7">
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/Manga/chainsawman/Chainsawman.html">
+                            <img src="buku/Manga//chainsawman/Chainsawman.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/Manga/One piece/One Piece.html">
+                            <img src="buku/Manga/One piece/One-Piece.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/Manga/Vindland Saga/Vindland saga.html">
+                            <img src="buku/Manga/Vindland Saga/Vindland saga.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/Manga/orb/orb.html">
+                            <img src="buku/Manga/orb/Orb.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/Manga/kagurabachi/kagurabachi.html">
+                            <img src="buku/Manga/kagurabachi/kagurobachi fix.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="buku/Manga/Berserk/berserk.html">
+                            <img src="buku/Manga/Berserk/Berserk fix.jpg" class="card-img-top" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            
+
+
+            </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+        <p>Buku Online &copy; 2024. Project Sistem Informasi</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

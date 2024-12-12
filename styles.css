@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* Posisi relatif untuk card */
+    overflow: hidden;   /* Menyembunyikan bagian gambar yang keluar dari card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%; /* Gambar memenuhi lebar card */
+    height: auto; /* Tinggi menyesuaikan proporsi gambar */
+}
+
+footer {
+    background-color: #343a40;
+}
+
+/* Mengatur ukuran gambar slider */
+.carousel-inner img {
+    width: 100%;         /* Gambar mengisi lebar slider */
+    height: auto;        /* Tinggi menyesuaikan proporsi gambar */
+    object-fit: contain; /* Memastikan gambar tidak terpotong dan proporsional */
+    max-height: 600px;   /* Membatasi tinggi maksimal slider di layar besar */
+    background-color: #343a40;
+}
+
+/* Menyesuaikan teks di carousel-caption untuk mobile */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Memberikan latar belakang semi-transparan */
+    padding: 10px; /* Menambahkan jarak di dalam caption */
+    border-radius: 8px; /* Membuat sudut caption melengkung */
+    color: white; /* Warna teks tetap terlihat jelas */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem; /* Ukuran teks heading lebih kecil untuk mobile */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Ukuran teks deskripsi lebih kecil */
+}
+
+/* Responsif pada perangkat mobile */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.2rem; /* Menyesuaikan ukuran heading untuk layar kecil */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Menyesuaikan ukuran teks deskripsi */
+    }
+
+    .carousel-inner img {
+        max-height: 300px; /* Mengurangi tinggi gambar slider untuk mobile */
+    }
+
+    .card {
+        margin-bottom: 15px; /* Memberikan jarak antar card */
+    }
+
+    .card img {
+        max-height: 200px; /* Membatasi tinggi gambar di card untuk layar kecil */
+    }
+
+    .row-cols-6 > .col {
+        flex: 0 0 50%; /* Dua card per baris */
+        max-width: 50%;
+    }
+}

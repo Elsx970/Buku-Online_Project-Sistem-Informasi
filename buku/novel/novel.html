@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Online</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .card {
+            max-width: 10rem; /* Make cards smaller */
+            margin: auto; /* Center align if needed */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Buku Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                            <div class="dropdown">
+                                <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Buku
+                                </a>
+                              
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../novel/novel.html">Novel</a></li>
+                                    <li><a class="dropdown-item" href="../Manga/Manga.html">Manga</a></li>
+                                    <li><a class="dropdown-item" href="../Filsafat/Filsafat.html">Filsafat</a></li>
+                                    <li><a class="dropdown-item" href="../Filsafat/Filsafat.html">Sejarah</a></li>
+                                  </ul>
+                              </div>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="books" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Novel</h2>
+
+            <!-- NOVEL -->
+            <div class="row row-cols-6 g-7">
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="Harry Potter and the Sorcerer’s Stone/Harry-Potter-and-the-Sorcerer’s-Stone.html">
+                            <img src="Harry Potter and the Sorcerer’s Stone/Harry-Potter-and-the-Sorcerer’s-Stone.jpeg" class="card-img-top" alt="Harry Potter and the Sorcerer’s Stone">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="Lord Of The Ring/Lord Of The Ring.html">
+                            <img src="Lord Of The Ring/lord of the ring_.jpg" class="card-img-top" alt="Lord Of The Ring/lord of the ring">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="The Witcher/The Witcher.html">
+                            <img src="The Witcher/The Witcher.jpg" class="card-img-top" alt="The Witcher">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="A Song Of Ice And Fire/A Song Of Ice And Fire.html">
+                            <img src="A Song Of Ice And Fire/A Song Of Ice And Fire.jpg" class="card-img-top" alt="A Song Of Ice And Fire">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="lupin/lupin.html">
+                            <img src="lupin/sherlock-lupin-dan-aku-1-cover-baru-kawanan-si-nyonya-hitam.jpg" class="card-img-top" alt="lupin">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 540px;">
+                        <a href="Bumi/Bumi.html">
+                            <img src="Bumi/Bumi.jpg" class="card-img-top" alt="lupin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-3 ">
+        <p>Buku Online &copy; 2024. Project Sistem Informasi</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
